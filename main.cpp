@@ -25,8 +25,6 @@ void cortar(Floresta **flo, Lenhador q) {
         
         //se a potencia do lenhador for maior ou igual a resistencia da arvore atual
         if (q.pot >= arvaux->e) {
-            cout << q.pot << endl;
-            cout << arvaux->e << endl;
             //O nó remover recebe o nó atual da floresta, a arvore atual
             remover = floaux;
             //A floresta apontada para o proximo nó, próxima árvore após o nó que iremos remover
