@@ -23,7 +23,6 @@ void Floresta::adicionar(Arvore *a){ //adicionar arvores na floresta
     if (this->arv == NULL){
         this->arv = a; //atribui arvore a para arv da floresta/adiciona arvore na floresta
         this->proximo = NULL; //o proximo vira null porque so tem 1 arvore nessa floresta
-        cout << "ADICIONADA" << endl;
     }
     //caso 2: ja tem arvores e esta adionando outra
     else {
@@ -37,7 +36,6 @@ void Floresta::adicionar(Arvore *a){ //adicionar arvores na floresta
         // ligar o novo nó ao fim da floresta
         novo->arv = a;
         p->proximo = novo;
-        cout << "ADICIONADA A PARTIR DO SEGUNDO IF" << endl;
     };
 };
 
