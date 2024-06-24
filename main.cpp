@@ -29,10 +29,8 @@ void cortar(Floresta **flo, Lenhador q) {
             cout << arvaux->e << endl;
             //O nó remover recebe o nó atual da floresta, a arvore atual
             remover = floaux;
-            cout << "Arvore a ser excluida " << remover->arv << endl;
             //A floresta apontada para o proximo nó, próxima árvore após o nó que iremos remover
             floaux = remover->proximo;
-            cout << "Proxima arvore " << floaux->arv << endl;
             //Removemos a arvore desejada
             delete remover;
             //A potencia do lenhador diminui de acordo com a resistencia da arvore que ele acabou de derrubar
@@ -42,7 +40,6 @@ void cortar(Floresta **flo, Lenhador q) {
         }
         //se a potencia do lenhador for menor que a resistencia da arvore atual
         else {
-            cout << "entrou no else" << endl;
             //A floresta auxiliar avança para a proxima arvore
             floaux = floaux->proximo;
         };
