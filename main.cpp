@@ -54,9 +54,7 @@ int main(){
     Floresta *l = new Floresta();
     
     //Cria um lenhador com potência aleatória (para mais potência, aumente o numero apos o %)
-    //Lenhador John((rand() % 20) + 1);
-    
-    Lenhador John(100);
+    Lenhador John((rand() % 100) + 1);
     
     cout << "O lenhador tem " << John.pot << " de potência." << endl;
 
